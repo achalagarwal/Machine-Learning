@@ -159,7 +159,7 @@ pause;
 fprintf('\nChecking Backpropagation (w/ Regularization) ... \n')
 
 %  Check gradients by running checkNNGradients
-lambda = 3;
+lambda =1;
 checkNNGradients(lambda);
 
 % Also output the costFunction debugging values
@@ -184,7 +184,7 @@ fprintf('\nTraining Neural Network... \n')
 
 %  After you have completed the assignment, change the MaxIter to a larger
 %  value to see how more training helps.
-options = optimset('MaxIter', 50);
+options = optimset('MaxIter', 100);
 
 %  You should also try different values of lambda
 lambda = 1;
