@@ -30,10 +30,7 @@ for i=1:size(idx,1)
     centroids(idx(i,1),:) = centroids(idx(i,1),:) + X(i,:);
     count(idx(i,1),1) = count(idx(i,1),1) +1;
 end
-idx
-X
-count
-centroids
+
 for i=1:size(centroids,1)
     centroids(i,:) = centroids(i,:)./count(i,1);
 end
